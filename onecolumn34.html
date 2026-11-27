@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>One Column - Minimaxing by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+        sup {
+            font-size: 0.7em;  /* 调整上标字体大小 */
+            vertical-align: super;  /* 强制上标对齐 */
+            line-height: 1;  /* 避免行高影响布局 */
+        }
+    </style>
+	
+	<style>
+  table {
+    border-collapse: collapse; /* 合并单元格边框 */
+    width: 100%; /* 设置表格宽度为100% */
+  }
+  td, th {
+    border: 1px solid #ccc;
+    padding: 8px; /* 加边框和内边距 */
+  }
+  th {
+    background-color: #f1e2e2; /* 表头背景色 */
+  }
+
+  /* 设置每一列的宽度 */
+  th:nth-child(1), td:nth-child(1) {
+    width: 17%; /* 第一列宽度为20% */
+  }
+  th:nth-child(2), td:nth-child(2) {
+    width: 8%; /* 第二列宽度为40% */
+  }
+  th:nth-child(3), td:nth-child(3) {
+    width: 75%; /* 第三列宽度为40% */
+  }
+</style>
+    <style>
+        body { font-size: 18px; /* 放大字体便于观察 */ }
+        sub {
+            font-size: 0.7em;
+            vertical-align: sub;
+            color: blue; /* 标蓝便于识别 */
+        }
+    </style>
+
+	<div style="text-align:center;">
+  <img src="image.jpg">
+</div>
+
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<header id="header">
+									<h1><a href="index.html" id="logo">计算机科学导论</a></h1>
+									<nav id="nav">
+										<a href="onecolumnc31.html">选择题</a>
+										<a href="onecolumn32.html">填空题</a>
+										
+									
+										<a href="onecolumn34.html">综合题</a>
+									</nav>
+								</header>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Main -->
+				<div id="main">
+					<div class="container">
+						<div class="row main-row">
+							<div class="col-12">
+
+								<section>
+									<h2>综合题</h2>
+
+									<h3>计算机由哪几部分组成？</h3>
+								<p>
+									由运算器、控制器、存储器、输入设备和输出设备五大部分构成，
+								</p>
+								<hr>
+
+									<h3>机器字长、指令字长、存储字长的区别和联系</h3>
+								<p>
+									机器字长：计算机能直接处理二进制数据的位数，一般等于内部寄存器的大小。
+									<br> 指令字长：一个指令字中包含二进制代码的位数。<br>
+									存储字长：一个存储单元存储二进制代码的长度。
+									<br>它们都是字节的整数倍。
+								</p>
+								<hr>
+
+
+
+													
+	<h3>什么是二进制溢出</h3>
+									<p>当你给一个固定位数的二进制数分配的存储空间（比如 8 位、16 位）存不下计算结果时，超出的部分会被直接丢弃，导致计算结果出错</p>
+									<hr>
+
+<h3>存储器按物理位置分类</h3>
+									<p>主要分为内部存储器和外部存储器两大类，二者在速度、容量、成本和用途上有显著差异。内部存储器是直接与 CPU 相连的存储部件，位于计算机主机内部，用于临时存储 CPU 正在运行的程序和处理的数据。外部存储器位于主机外部，不直接与 CPU 相连，需要通过 I/O 接口和总线与主机通信，用于长期存储大量程序和数据。</p>
+									<hr>
+
+
+<h3>存储器的分级结构</h3>
+									<p>寄存器（Register）
+
+位于 CPU 内部
+
+访问速度最快、容量最小、成本最高
+
+高速缓存（Cache）
+
+位于 CPU 与主存之间
+
+用于存放常用数据，减少访存延迟
+
+主存（Main Memory，RAM）
+
+程序运行时直接访问
+
+速度和容量居中，断电数据丢失
+
+外存 / 辅助存储器（Secondary Storage）
+
+如硬盘、SSD</p>
+									<hr>
+
+								<h3>高速缓冲存储器（Cache）</h3>
+								<p>
+是一种位于 CPU 与主存之间 的高速小容量存储器，用于存放 近期或频繁访问的数据和指令，以减少平均访存时间。缩小 CPU 与主存之间的速度差距，提高程序的整体执行效率。
+								</p>
+								<hr>
+							   <h3>控制器组成</h3>
+								<p>
+主要由程序计数器、指令寄存器、指令译码器和控制信号及时序控制电路组成。
+								</p>
+								<hr>
+															<h3>什么是RAM、SRAM、DRAM、ROM、PROM、EPROM、EEPROM</h3>
+								<p>
+									RAM：是随机存取存储器，在程序的执行过程中既可读出又可写入信息。<br>
+SRAM：靠触发器原理存储信息，只要电源不掉电，信息就不丢失。<br>
+DRAM：靠电容存储电荷原理存储信息，即使电源不掉电，由于电容要放电，信息也会丢失，故需再生。<br>
+ROM：是只读存储器，在程序执行过程中只能读出信息，不能写入信息。<br>
+PROM：即可一次性编程的只读存储器。EPROM即可擦除的只读存储器，利用紫外线抹去原有信息，可多次编程。<br>
+EEPROM：即电可擦除只读存储器，可多次编程。
+								</p>
+
+								<h3>设有一个64K×8位的RAM芯片，试问该芯片共有多少个基本单元电路（简称存储基
+元）？</h3>
+									<p>存储基元总数= 64K×8位=512K位= 2<sup>19</sup>位</p>
+								<hr>
+									<h3>某计算机字长为32位，其存储容量是64KB，按字编址其寻址范围是多少？若主存以字节编址，其寻址范围是多少？</h3>
+								<p>
+								已知条件: <br>
+								字长为32位，说明每个"字"占用4个字节（32位 ÷ 8 = 4字节）。
+								存储容量为64KB，即64 * 1024字节  <br>
+								按字编址，每个地址单位代表一个“字”，而一个字占4字节。
+								<br>计算字编址范围：
+								总字数 = 总字节数 ÷ 每字字节数 = 65536字节 ÷ 4字节 = 16384个字。
+所以，按字编址的寻址范围是从0到16383（总共16384个字地址）。<br>
+按字节编址的情况：<br>
+
+每个字占4个字节，因此字节地址是字地址的4倍。寻址范围为64K.
+
+字地址为0对应字节地址0、1、2、3（共4个字节），字地址1对应字节地址4、5、6、7，以此类推。
+								
+								</p>
+								<hr>
+									<h3>一个容量为16 K×32位的存储器，其地址线和数据线的总和是多少？</h3>
+								<p>
+									数据线的数量：<br>
+
+存储器的每个存储单元是32位（即4字节）。因此，每个存储单元需要32根数据线。
+地址线的数量：
+
+存储器的容量为 16 K（即16 × 1024 = 16384）个存储单元
+<br>  					<P>2<sup>14</sup>=16384  所以，地址线的数量是 14 根。</P><br>
+总线的总数是地址线和数据线数量的和：
+14(地址线)+32(数据线)=46根
+								</p>
+								<hr>
+									<h3>假如一台计算机有8个数据寄存器（R0~R7），512个字的存储空间以及16种不同的指令（如add，subtract等），那么指令 subtract M R1 需要占多少位空间？如果数据和指令使用相同的字长，那么每个数据寄存器大小是多少字节？
+										计算机中的IR大小是多少位？PC大小是多少位？数据总线多少位？地址总线多少位？控制总线最少需要多少位？ </h3>
+								<p>答：<br>
+									<table>
+										<tr> <th>参数名称</th> <th>计算结果</th> <th>推导依据</th> </tr>
+										<tr>  <td>指令字长</td><td>16位</td><td>指令 subtract M R1 占用空间：包含三个部分：<br>
+											操作码（subtract）、存储器地址（M）和寄存器编号（R1）操作码：16 种指令，需要log<sub>2</sub> 16 = 4位。<br>
+											存储器地址 (M)：512 个字，需要 log<sub>2</sub> 512 = 9位。
+										<br>寄存器编号 (R1)：8 个寄存器，需要 log<sub>2</sub> 8 = 3 位。
+										<br>4 + 9 + 3 = 16 位。</td> </tr>
+										<tr> <td>数据寄存器大小</td> <td>2字节</td><td>与指令字长相同16位，16/8（每个字长8位）=2字节</td>	</tr>
+									<tr>
+										<td>IR（指令寄存器）大小</td><td>16位</td><td>与指令字长相同，存放整条指令</td>
+									</tr>
+									<tr>
+										<td>PC（程序计数器）大小</td><td>9位</td><td>程序计数器对应存储器地址空间说，即对应 512 个字的寻址能力，512=2<sup>9</sup>，即9位</td>
+									</tr>
+									<tr>
+										<td>数据总线宽度</td><td>16位</td><td>数据总线宽度，即，CPU 一次能并行传输的数据位数，= 与机器字长；在定长指令机中，机器字长 = 指令字长；所以：= 16位</td>
+									</tr>
+									<tr>
+										<td>地址总线宽度</td><td>9位</td><td>也即是，存储器的地址总数，容量512，log<sub>2</sub>512=9，也即是512=2<sup>9</sup>，9位</td>
+									</tr>
+									<tr>
+										<td>控制总线最少位数</td><td>4位</td><td>控制总线用于传输控制信号。最基本的控制需求是区分 16 种不同的操作。最少需要 4 位（足以编码 16 种不同的指令控制信号）log<sub>2</sub>16=4</td>
+									</tr>
+
+
+									</table>
+
+								</p>
+								<hr>	
+								<h3></h3>
+								<p>
+									简单计算机Simple-1机器周期相关问题<br>
+									<img src="images/p01.jpg" width="800" >
+									<p>1, 取指Fetch过程，PC为02时，对于存储器地址第02行，因为PC(00)对于第一行00，PC(01)对应01行地址，并加载LOAD至IR（指令寄存器），所以 Fetch(IR) = (7201)<sub>16 <br>	</p>
+										<p>2,译码(Decode)过程，编码7201的第一个编码为指令集中7，所对应的是逻辑与运算AND；因此，R2 &larr;  R0 <span style="color: red;">AND  </span>  R1 </p>
+										<p> 3, 执行逻辑与运算，把二进制中AND运算后，转化为16进制，结果为(0040)<sub>16</sub></p>
+
+
+								
+									
+								</p>
+								<hr>
+								<h3>参考文献</h3>
+								<p>计算机科学导论（讲义）2025，王红涛，河南大学</p>
+								<p>计算机组成原理 (第2版)笔记和课后习题(含考研真题)详解 --唐朔飞</p>
+								</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+
+								
+
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+
+								<div id="copyright">
+									&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

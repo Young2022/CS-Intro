@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>One Column - Minimaxing by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		   <style>
+        sup {
+            font-size: 0.7em;  /* 调整上标字体大小 */
+            vertical-align: super;  /* 强制上标对齐 */
+            line-height: 1;  /* 避免行高影响布局 */
+        }
+    </style>
+	    <style>
+        body { font-size: 18px; /* 放大字体便于观察 */ }
+        sub {
+            font-size: 0.7em;
+            vertical-align: sub;
+            color: blue; /* 标蓝便于识别 */
+        }
+    </style>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	 <style>
+        .custom-underline {
+            position: relative;
+            /* 防止下划线超出文字范围 */
+            display: inline-block;
+        }
+        
+        .custom-underline::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            /* 下划线宽度 */
+            width: 100%;
+            /* 下划线粗细（关键） */
+            height: 3px;
+            /* 下划线颜色 */
+            background-color: #6421f3;
+            /* 圆角效果（可选） */
+            border-radius: 1px;
+        }
+    </style>
+
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<header id="header">
+									<h1><a href="index.html" id="logo">计算机科学导论</a></h1>
+									<nav id="nav">
+										<a href="onecolumnc31.html">选择题</a>
+										<a href="onecolumn32.html">填空题</a>
+																
+										<a href="onecolumn34.html">综合题</a>
+									</nav>
+								</header>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Main -->
+				<div id="main">
+					<div class="container">
+						<div class="row main-row">
+							<div class="col-12">
+
+								<section>
+									<h2>填空题</h2>
+									<hr>
+									<h3> 计算机的组成主要包括：_____和软件（操作系统及应用程序）。其中，主机包括CPU、内存等核心硬件，而外设指的是与计算机连接的其他硬件设备，如打印机、显示器等。</h3>
+									<p> 	答：硬件（主机和外设）</p><hr>
+
+									<h3>冯.诺伊曼计算机模型的核心思想是____和“存储程序”
+
+									</h3>
+									<p> 答：二进制</p> <hr>
+									<h3>利用____运算和掩码80H可将一个8位模式的最高位置位（置1）</h3>
+									<p>答：或（OR）<br>
+									解析：特定位置 1 (Set)	或 (OR)，掩码特点：目标位为 1，其余为 0
+特定位清 0 (Clear)	与 (AND)	，掩码特点：目标位为 0，其余为 1</p> <hr>
+
+
+								
+								<h3>十六进制2ED转二进制和十进制</h3>
+								<p>答：001011101101B=749D</p>
+								<p style="font-size: 13px;"> 引：数字设计和计算机体系结构（原书第2版）P6</p>
+									<hr>
+								<h3>两个数7E5H和4D3H相加得： </h3>
+								
+									<p>答：CB8H （逢16进1） </p>
+								</p>
+								<hr>
+								<h3>一个16位无符合二进制数的表示范围是：</h3>
+								<p>答：0~65535, (0~2<sup>16</sup>-1) </p> 										
+							</p>
+							<h3>字长为 6 的计算机中的无符号数，其表示范围是____</h3>
+							<p>答：表示范围是 0 到 63。<br>
+							解析：对于字长为 n 的无符号数（Unsigned Number），其表示范围的计算公式为：
+							$$ 0\le N \le 2^n-1 $$</p>
+								<h3></h3>
+								<h3>一台计算机的指令长度为 16 位，其中操作码占 5 位，求最多可表示的指令条数，以及剩余用于操作数的位数。</h3>
+								<p>答：最多指令条数： 2<sup>5</sup>=32 
+							<br> 剩余操作数位数：16-5=11位</span>
+						</p>
+								<hr>
+								<h3>现有一台计算机有256KB内存，字长32位，对每个字寻址需要_<span class="custom-underline">16</span>_位地址，对每个字节寻址需要 __<span class="custom-underline">18</span>_ 位地址。（填写十进制数）</h3>
+								<p>已知：内存容量：256KB=256*1024 B （byte）=2<sup>18</sup> 字节；字长：32位bit=4字节byte，可存的字数=2^18/4=2<sup>16</sup>;
+									<br>（1）对每个字寻址（Word-addressable）是计算机存储系统中的一种寻址方式，核心含义是：CPU 发出的一个地址，直接对应主存储器中的一个完整的字（Word），此时：字数和地址位数相等，所以所需位数为16位。<br>
+									（2）对每个字节寻址：字节数和地址位数相等，总字节数2^18字节，每个字节寻址为18位。
+								</p> <hr>
+
+  								<h3>设有一个具有15位地址和8位字长的存储器，问：该存储器可存储_____ 个字节的信息；</h3>
+								<p>答: 32K。解析：15位地址，地址容量：2<sup>15</sup> 位 bit，=2<sup>5</sup>*10<sup>10</sup>=2<sup>5</sup> K 位（bit）；8位字长=1B（Byte）；
+									所以，容量= 2<sup>5</sup> K B =32KB
+								</p>
+								<hr>
+								<h3>  已知:3&times; 4=10，则5&times;6=____                 </h3>
+								<p>答：26。<p style="color:red">解析：非十进制，先确定使用哪种进制，由已知3&times;4=10可知，该题使用的是12进制。 </p>  
+								</p>  								<hr>
+
+								 <h3>十进制数 --108，其 8 位二进制（含符号位）的原码____，反码____和补码____ </h3>
+								 <p>
+                                 答：11101100；10010011；10010100 <br>
+								解析：1，确定符号：-108是负数，符号位为1。2，求108的二进制表示：108的二进制是：01101100。<p style="color:red">
+								 3，求负数的原码规则：其绝对值的二进制表示放在符号位后面。</p> 因此，8位二进制的01101100（128）的符号位（最高位）最左边的0）变为1后，得原码为：11101100  <br>
+								 <p style="color:red"> 4, 求反码规则：正数的反码是原码（与原码相同）；负数的反码是：其原码的符号位不变，数值位按位取反。 </p>  也就原码11101100最左符合位1不变，数值位取反，即为：10010011
+                                <p style="color:red">  求补码规则：正数的补码是原码（与原码相同）；负数的补码是其反码末位加 1。</p> 因此， 其反码10010011末位加1，补码是：10010100    
+								
+							<h3>已知[x]<sub>补</sub>＝10110111，则，[x]<sub>原</sub>＝ ____ (填写二进制数) </h3>	
+
+							<p>答： 11001001；<p style="color:red">解析：1，补码减1，得反码；2，符合位不变，数值取反</style>
+								   </p></p>
+                                    <hr>
+ 								<h3>应用德摩根定理化简 $$\overline{A+\overline{B}\cdot\overline {C}}$$</h3>
+								<p>答：$$\overline{A}\cdot B+\overline{A}\cdot C$$</p>
+                                </p> <hr>
+								<h3>将一个8位二进制数据的最高（左）位复位（清0），求掩码和运算</h3>
+								<p>答: 掩码为：01111111；运算：AND。<br> 解析：根据题意，最高位变为0，其他位不变。<p style="color:red">
+								掩码的逻辑本质: 利用二进制运算的特性来实现精确到位的控制：与 (AND) 0：清零（Reset），或 (OR) 1：置位（Set）......<br>
+							掩码（Mask） 是一个位模式（Bit Pattern），通常是一个二进制序列，用于通过按位运算（如 AND, OR, XOR）来屏蔽、提取、设置或更改另一个二进制序列中的特定位。掩码就像是一张“镂空的纸”，盖在原始数据上，只让你看到或修改你感兴趣的部分，而“遮住”其他部分。<br>
+								掩码的核心特征：<br> 
+								屏蔽性：通过将掩码位设为 0 并进行 AND 运算，可以强制将目标位“屏蔽”（清零）。<br>
+								选择性；掩码中的 1 或 0 对应于目标数据中需要操作的特定位置。</p>
+                                    <br>
+ 							
+                                </p> <hr>
+
+
+
+
+
+
+
+								<h3>参考文献</h3>
+								<p>计算机科学导论 （讲义） 河南大学  王红涛，2025</p>
+								<p>计算机组成原理 (第2版)笔记和课后习题(含考研真题)详解 --唐朔飞</p>
+								
+								</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<div class="container">
+						<div class="row">
+
+						<div class="row">
+							<div class="col-12">
+
+								<div id="copyright">
+									&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

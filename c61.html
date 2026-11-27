@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Three Column - Minimaxing by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<header id="header">
+									<h1><a href="index.html" id="logo">计算机科学导论</a></h1>
+									<nav id="nav">
+										
+											<a href="onecolumnc61.html">选择题</a>
+										<a href="onecolumn62.html">填空题</a>
+																	
+										<a href="onecolumn64.html">综合题</a>
+									
+								
+									</nav>
+								</header>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Main -->
+				<div id="main">
+					<div class="container">
+						<div class="row main-row">
+							<div class="col-3 col-12-medium">
+
+								<section>
+									<h2>主要知识点</h2>
+									<ul class="link-list">
+									<li><a href="c11.html">第一章、计算机领域应掌握的基本技能及学习路径</a></li>
+										<li><a href="c21.html">第二章、计算机系统基石</a></li>
+										<li><a href="c31.html">第三章、计算机体系基础</a></li>
+										<li><a href="c41.html">第四章、计算机操作系统</a></li>
+										<li><a href="c51.html">第五章、开发文档编写与版本控制基础</a></li>
+										<li><a href="c61.html">第六章、人工智能</a></li>
+										
+									</ul>
+								</section>
+
+								<section>
+									
+								</section>
+
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
+
+								<section class="middle-content">
+									<h2>第六章、人工智能：主要知识点</h2>
+									<p>1.	人工智能的基本概念与分类</p>
+									<h3>人工智能：研究、开发用于模拟、延伸和扩展人类智能的理论、方法、技术及应用系统，使机器能够完成通常需要人类智能才能完成任务的一门学科。</h3>	
+
+
+
+
+
+
+
+									<p>2.	机器学习的主要实现技术</p>
+									<h3>机器学习（Machine Learning）</h3>
+									<p>通过数据和算法，使计算机系统在没有明确编程的情况下，自动学习规律并不断改进其性能的方法。</p>
+									<p>3.	线性回归</p>
+									<p>线性回归通过建立自变量与因变量之间的线性关系模型，利用已知数据学习模型参数，从而对连续数值进行预测。
+输出是输入特征的线性组合。
+通过最小化预测值与真实值之间的误差，确定最优模型参数。</p>
+										<p>建立回归模型：
+											$$
+											y=wx+b
+											$$
+											模型预测，预测值：
+											$$
+											\hat {y_i} =wx_i+b
+											$$
+											损失函数：
+											$$
+											L(w,b)=\frac{1}{2n}\sum_{i=1}^n {(\hat y_i-y_i)^2}
+											$$
+										</p>
+										<h3>梯度下降</h3>
+										<p>通过沿损失函数负梯度方向迭代更新参数，使模型误差逐步减小。</p>
+										<p>一、模型设定（单变量线性回归）
+											$$
+											\hat y =wx+b
+											$$
+										</p>
+										<p>二、损失函数（cost function）
+											$$
+											L(w,b)=\frac{1}{2n}\sum_{i=1}^n {(\hat y_i-y_i)^2}
+											$$
+										</p>
+										<p>梯度计算
+
+											$$
+											\frac {\partial L}{\partial w}  =\frac{1}{2n}\sum_{i=1}^n {(wx_i+b-y_i)x_i}
+											<br>
+											$$
+											$$
+											\frac {\partial L}{\partial b}  =\frac{1}{2n}\sum_{i=1}^n {(wx_i+b-y_i)}								
+											$$
+										</p>
+										<p>四、参数更新</p>
+										<p>设学习率为 \theta </p>
+
+										$$
+										w:=w-\theta\frac{\partial L}{\partial w}
+										$$
+										$$
+										b:=b-\theta\frac{\partial L}{\partial b}
+										$$
+
+
+									<p>4.	逻辑回归</p>
+										<p>是一种通过 Sigmoid 函数将线性模型输出映射为概率的二分类方法。 </p>
+										<p>模型形式
+											先进行线性拟合：$$
+											z=wx+b
+											$$
+										</p>
+										<p>再通过Sigmoid函数求概率：
+											$$
+											P=\frac{1}{1+e^{-z}}
+											$$
+										
+											<h3>逻辑回归多元函数情况：</h3>
+										<p>
+											$$P(x)=\frac{1}{1+e^{-g(x)}}$$<br>
+											$$g(x_1, x_2)=\theta _0+\theta _1x_1+\theta _2x_2$$<br>
+											逻辑回归对单个样本的损失函数（值）：<br>
+											$$J_i=-log(P(x_1)), if   y_i =1 $$
+
+
+										</p>
+										</p>
+
+									<p>5.	模型训练中的关键问题和评估指标</p>
+										<h3>模型训练中的关键问题</h3>
+										<p>过拟合与欠拟合
+
+欠拟合：模型过于简单，无法捕捉数据规律
+
+过拟合：模型过于复杂，只记住训练数据，泛化能力差</p>
+											<p>数据质量与数据划分
+
+数据噪声、偏差会直接影响模型性能
+
+通常将数据划分为训练集、验证集和测试集</p>
+												<h3>常见模型评估指标</h3>
+												<p>分类模型评估指标</p>
+												<p>准确率（Accuracy）：
+预测正确的样本占总样本的比例
+<br>
+精确率（Precision）:
+被预测为正类中，实际为正类的比例
+<br>
+召回率（Recall）:
+实际正类中，被正确预测出的比例
+<br>
+F1 值：
+精确率与召回率的调和平均</p>
+
+
+
+									<p>6.	神经网络与深度学习</p>
+													<h3>神经网络</h3>
+													<p>神经网络（Neural Network），特别是人工神经网络（Artificial Neural Network, ANN），是一种受生物神经系统（如人脑）启发的计算模型，用于处理复杂的数据模式和进行机器学习任务。人工神经元（Neuron），也称为节点或单元。多个神经元通过层级结构组织起来，形成网络。</p>
+
+													<h3>神经网络通常包括以下部分：</h3>
+													<p>输入层（Input Layer）：接收原始数据（如图像像素值、文本特征等）。
+隐藏层（Hidden Layers）：一层或多层中间层，对输入数据进行非线性变换和特征提取。这是网络“学习”能力的关键所在。
+输出层（Output Layer）：产生最终预测或分类结果（如类别概率、回归值等）</p>
+								<h3>神经元的工作原理</h3>
+													<p>接收来自前一层多个神经元的输入信号（每个输入带有对应的权重 weight）。
+将所有输入与权重相乘后求和，再加上一个偏置（bias）。
+将该和值输入到一个**激活函数（Activation Function）**中，产生该神经元的输出。</p>
+								<h3>深度学习</h3>
+													<p>是一种基于多层神经网络，通过端到端学习从数据中自动提取特征并完成预测任务的机器学习方法。是机器学习的子集，是实现人工智能的重要方法之一</p>
+								<h3>核心思想</h3>
+													<p>多层结构：神经网络包含输入层、隐藏层和输出层，每一层对数据进行非线性变换。
+
+特征自动提取：不依赖人工设计特征，网络自动学习数据表示。
+
+端到端学习：从原始输入到预测输出可直接训练，无需中间人工干预。</p>
+								<h3></h3>
+													<p></p>
+
+									<p>7.	生成式AI的使用</p>
+								<h3>生成式人工智能</h3>
+													<p>是能够学习数据规律并生成新的、与训练数据相似或创新内容的人工智能技术。</p>							
+													<h3>核心思想</h3>
+													<p>学习分布：模型通过训练学习数据的概率分布或特征模式。
+
+生成内容：可以生成文本、图像、音频、视频等多种形式的内容。
+
+模拟创造力：不只是预测或分类，而是“创造”新的实例。</p>							
+													<h3>特点</h3>
+													<p>内容创新：可以生成与原数据相似但新的样本
+
+多模态能力：支持图文、音视频等多种类型
+
+依赖大数据与算力：模型训练需大量数据和计算资源</p>						
+													<h3></h3>
+													<p></p>						
+													<h3></h3>
+													<p></p>							
+													<h3></h3>
+													<p></p>
+
+
+								
+								</section>
+
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+
+								<section>
+									<h2>尽信书，则不如无书----孟子</h2>
+									<div>
+										<div class="row">
+											<div class="col-3 col-6-medium col-12-small">
+												
+											</div>
+											<div class="col-3 col-6-medium col-12-small">
+											
+											</div>
+											<div class="col-3 col-6-medium col-12-small">
+												
+												</ul>
+											</div>
+											<div class="col-3 col-6-medium col-12-small">
+										
+											</div>
+										</div>
+									</div>
+								</section>
+
+							</div>
+							<div class="col-4 col-12-medium">
+
+								<section>
+									
+									<footer class="controls">
+									
+									</footer>
+								</section>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+
+								<div id="copyright">
+									&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

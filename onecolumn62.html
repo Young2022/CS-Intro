@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>One Column - Minimaxing by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		style>
+        sup {
+            font-size: 0.7em;  /* 调整上标字体大小 */
+            vertical-align: super;  /* 强制上标对齐 */
+            line-height: 1;  /* 避免行高影响布局 */
+        }
+    </style>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<style>
+  table {
+    border-collapse: collapse; /* 合并单元格边框 */
+    width: 100%; /* 设置表格宽度为100% */
+  }
+  td, th {
+    border: 1px solid #ccc;
+    padding: 8px; /* 加边框和内边距 */
+  }
+  th {
+    background-color: #f1e2e2; /* 表头背景色 */
+  }
+
+  /* 设置每一列的宽度 */
+  th:nth-child(1), td:nth-child(1) {
+    width: 10%; /* 第一列宽度为20% */
+  }
+  th:nth-child(2), td:nth-child(2) {
+    width: 10%; /* 第二列宽度为40% */
+  }
+  th:nth-child(3), td:nth-child(3) {
+    width: 50%; /* 第三列宽度为40% */
+  }
+    th:nth-child(4), td:nth-child(3) {
+    width: 30%; /* 第四列宽度为40% */
+  }
+</style>
+    <style>
+        body { font-size: 18px; /* 放大字体便于观察 */ }
+        sub {
+            font-size: 0.7em;
+            vertical-align: sub;
+            color: blue; /* 标蓝便于识别 */
+        }
+    </style>
+
+	<div style="text-align:center;">
+  <img src="image.jpg">
+</div>
+
+
+
+
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<header id="header">
+									<h1><a href="index.html" id="logo">计算机科学导论</a></h1>
+									<nav id="nav">
+										<a href="onecolumnc61.html">选择题</a>
+										<a href="onecolumn62.html">填空题</a>
+								
+									
+										<a href="onecolumn64.html">综合题</a>
+									</nav>
+								</header>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Main -->
+				<div id="main">
+					<div class="container">
+						<div class="row main-row">
+							<div class="col-12">
+
+								<section>
+									<h2>第六章 填空题</h2>
+									<h3>现有数据点 (1, 3),(2, 5),(3, 6),线性回归拟合的函数为 f(x) = x+3。则此时的损失函数值为______ (保留三位小数)。
+									</h3>
+									<p> 答：0.167 <br>
+										解析：计算线性回归的损失函数值，通常使用均方误差（MSE），公式如下：<br>
+										$$ MSE=\frac {1}{2n}\sum_{i=1}^{n}(y_i-\hat y_i)^2$$
+										n为数据点数量，y_i是真实值，$\hat y_i$是模型预测值。<br>
+										Step 1, 根据拟合函数f(x)=x+3，<br>
+										$$x=1, \hat y_1=4 $$ <br>
+										$$x=2, \hat y_2=5 $$ <br>
+										$$x=3, \hat y_3=6 $$ <br>
+									
+										Step 2, 计算每个数据点的误差平方 <br>
+										$$(y_1)-\hat y_1)^2=(3-4)^2=1$$<br>
+										$$(y_2)-\hat y_2)^2=(5-5)^2=0$$<br>
+										$$(y_3)-\hat y_3)^2=(6-6)^2=0$$<br>
+										Step 3, 计算均方误差<br>
+										$$MSE=\frac{1}{2\times3}(1+0+0)^2=0.167$$
+
+									</p> <hr>
+
+									<h3> 在一个二分类任务中，模型预测结果如下：真实为正：100个，其中90个被预测为正；真实为负：100个，其中80个被预测为负，则准确率 = [填空1]，精确率 = [填空2]，召回率 = [填空3]， F1-分数 = [填空4]。（结果保留两位小数）
+
+ </h3>
+									<p>答：0.85，0.82，0.90，0.86 <br>
+										<p>解析：二元分类器的性能指标进行衡量的最常用指标是：准确率、精准率、召回率、F1值，并基于真阳性、真阴性、假阳性、假阴性的概念。阴性、阳性代表两种类别，真，假是表示预测的类和真实的类是否相同，相同为真，不相同为假。</p>
+									<table>
+										<tr> <th> 参数名称 </th>  <th> 计算结果 </th>  <th> 计算过程 </th>	<th>公式含义</th>		</tr>
+										<tr> <td> 准确率</td> <td>0.85 </td>  <td> $$准确率(Accuracy)=\frac{TP+TN}{TP+TN+FP+FN}=\frac{90+80}{200}=0.85 $$</td> <td> It calculates the percentage of accurately predicted instances in relation to the total number of examples in the dataset.<br> <p style="color: blue"> 计算准确预测实例相对于数据集合总样本数的百分比。</p>  </td></tr>
+										<tr> <td> 精确度</td> <td>0.82 </td>   <td> $$精确率(Precision)=\frac{TP}{TP+FP}=\frac{90}{90+20}\approx0.82 $$</td><td> It is defined as the proportion of true positives to total expected positives (true positives + false positives). <br> <p style="color:blue">真阳性样本数占总预期阳性数的比例（真阳性数+假阳性数）。</p>   </td></tr>
+										<tr> <td> 召回率</td> <td>0.90 </td>  <td> $$召回率(recall)=\frac{TP}{TP+FN}=\frac{90}{90+10} = 0.90 $$</td><td> Recall ratio 或译为：查全率，The  proportion  of  true  positives  to  total  actual  positives is known as recall, also known as sensitivity or true positive rate. It assesses its ability to accurately capture all positive cases while leaving none out.<br><p style="color:blue">真阳性占实际阳性总数的比例称为召回率，也称真阳性率。它评估准确捕捉所有阳性样本的能力，同时不遗漏任何样本。</p>  </td></tr>
+										<tr> <td> F1分数</td> <td>0.86 </td>   <td> $$F1-Score =\frac{2\times (Precision\times Recall) }{Precision+Recall} =\frac {2\times 0.82\times 0.9}{0.82+0.9} = 0.86 $$</td><td> It is an accurate evaluation of how well a model performs because it is the harmonic mean of precision and recall. <br> <p style="color:blue">F1将召回率和精确率结合为一个指标，提供用于对模型准确度的全面评估</p></td></tr>
+										</table>
+											<p>引：Artificial Intelligence for Chemical Sciences- Concepts, -- Shrikaant Kulkarn</p>
+
+
+									
+	
+		
+		<table style="width: 50%; table-layout: fixed;">  
+	        <caption>混淆矩阵</caption>
+        <thead>
+            <tr>
+                <th rowspan="2"><p style="color:blue">预测值</p>   </th>
+                <th colspan="2">真实值</th>
+            </tr>
+            <tr>
+                <th>0</th>
+                <th>1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><p style="color:blue">0</p></td>
+                <td class="true-negative">True Negative (TN)</td>
+                <td class="false-positive">False Positive (FP)</td>
+            </tr>
+            <tr>
+                <td><p style="color:blue">1</p></td>
+                <td class="false-negative">False Negative (FN)</td>
+                <td class="true-positive">True Positive (TP)</td>
+            </tr>
+        </tbody>
+    </table>
+	<p>注：True Positive（TP，真阳性）：模型认为是1，真实值是1的数量（分类正确）<br>
+True Negative（TN ，真阴性）：模型认为是0，真实值是0的数量（分类正确）<br>
+False Positive（FP ，假阳性） ：真实值是0的数量，模型预测为1（分类错误）<br>
+False Negative（FN，假阴性）：真实值是1，而模型预测为0（分类错误）
+</p>
+
+									</p> <hr>
+															
+
+								参考资料：<br>
+									计算机科学导论 （讲义） 王红涛  河南大学  2025-26	<br>
+									scikit-learn机器学习 第2版 -- [美]加文·海克(Gavin Hackeling) 2019
+
+								</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+
+								
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+
+								<div id="copyright">
+									&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

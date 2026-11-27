@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Three Column - Minimaxing by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<header id="header">
+									<h1><a href="index.html" id="logo">计算机科学导论</a></h1>
+									<nav id="nav">
+										
+											<a href="onecolumnc21.html">选择题</a>
+										<a href="onecolumn22.html">填空题</a>
+																		
+										<a href="onecolumn24.html">综合题</a>
+									
+								
+									</nav>
+								</header>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Main -->
+				<div id="main">
+					<div class="container">
+						<div class="row main-row">
+							<div class="col-3 col-12-medium">
+
+								<section>
+									<h2>主要知识点</h2>
+									<ul class="link-list">
+									<li><a href="c11.html">第一章、计算机领域应掌握的基本技能及学习路径</a></li>
+										<li><a href="c21.html">第二章、计算机系统基石</a></li>
+										<li><a href="c31.html">第三章、计算机体系基础</a></li>
+										<li><a href="c41.html">第四章、计算机操作系统</a></li>
+										<li><a href="c51.html">第五章、开发文档编写与版本控制基础</a></li>
+										<li><a href="c61.html">第六章、人工智能</a></li>
+										
+									</ul>
+								</section>
+
+								<section>
+									
+								</section>
+
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
+
+								<section class="middle-content">
+									<h2>第二章、计算机系统基石：主要知识点</h2>
+
+									<h3>图灵机的基本概念</h3>
+									
+									<p>图灵机是由英国数学家 阿兰·图灵（Alan Turing） 在 1936 年提出的一种抽象计算模型，用于刻画“什么是可计算的”。
+										图灵机是一种用于描述计算本质的抽象模型，通过状态转移和纸带操作来完成计算，是现代计算理论的基础。
+										<br>
+										<p>图灵机由以下几个部分构成（标准4要素）：<br>
+
+(1) 无限长纸带（Tape）：  分成一个个格子，每个格子存放一个符号<br>
+ (2) 读写头（Head）：一次只作用于一个格子；能读取当前符号、写入新符号；可向左或向右移动一格<br>
+ (3) 状态寄存器（States），表示机器当前所处的状态，包含一个初始状态和一个或多个终止状态<br>
+ (4) 控制规则（转移函数）：决定：读到某符号时，在某状态下，写什么、怎么移动、转到哪个状态 <br>
+
+</p>
+
+<p> 图灵机的重要意义：<br>
+
+1️⃣ 定义了“可计算性”，凡是图灵机能计算的问题，称为可计算问题 <br>
+
+2️⃣ 现代计算机的理论基础，现代计算机在计算能力上等价于图灵机 <br>
+
+3️⃣ 提出不可计算问题</p> <hr>
+								<h3>图灵机判断回文的工作过程（简化版）</h3>
+
+									<p>初始状态：将纸带上的字符看作输入，读写头位于第一个字符上。<br>
+
+比较左右端字符：如果字符相同，标记该字符为已处理，并将读写头向右（或向左）移动，继续比较下一个字符。如果字符不同，立即进入“拒绝”状态。<br>
+
+如果所有字符都成功匹配，则进入“接受”状态，表明字符串是回文。</p> <hr>
+
+									</p>
+									<h3>冯诺依曼架构的组成</h3>
+									<p>冯·诺依曼架构由运算器、控制器、存储器、输入设备和输出设备组成，其核心是“存储程序思想”</p>
+
+<p>存储程序（最核心）：以二进制形式表示，程序和数据统一存放在存储器中，可像数据一样被读取和修改，这是冯·诺依曼模型的本质特征</p>
+<p>冯·诺依曼瓶颈源于 CPU 与存储器的通道受限，现代计算机通过缓存层次、并行执行和结构改进加以缓解</p>
+
+									<p> 图灵机与冯诺依曼模型的比较：<br>图灵机解决“能不能算”，冯·诺依曼模型解决“怎么算得快、怎么算出来”
+									</p> <hr>
+									<h3>CPU在执⾏⼀条指令时，通常需要以下步骤</h3>
+									<p>
+										1. 取指：从内存中读取下⼀条指令。<br>
+2. 译码：解析指令，知道要做什么操作。<br>
+3. 执⾏：可能再次访问内存，读取操作数。<br>
+4. 回写：将结果写回内存。<br>
+									</p> <hr>
+
+
+																
+
+
+								
+								</section>
+
+							</div>
+							<div class="col-3 col-12-medium">
+
+								<section>
+									
+								</section>
+
+								<section>
+								
+								</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+
+								<section>
+									<h2>非学无以广才，非志无以成学----诸葛亮</h2>
+									<div>
+										<div class="row">
+											<div class="col-3 col-6-medium col-12-small">
+												
+											</div>
+											<div class="col-3 col-6-medium col-12-small">
+											
+											</div>
+											<div class="col-3 col-6-medium col-12-small">
+												
+												</ul>
+											</div>
+											<div class="col-3 col-6-medium col-12-small">
+										
+											</div>
+										</div>
+									</div>
+								</section>
+
+							</div>
+							<div class="col-4 col-12-medium">
+
+								<section>
+									
+									<footer class="controls">
+									
+									</footer>
+								</section>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+
+								<div id="copyright">
+									&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
